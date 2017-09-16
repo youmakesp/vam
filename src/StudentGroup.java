@@ -55,7 +55,7 @@ public class StudentGroup implements StudentArrayOperation {
 		s[0]=student;
 		for(int i=0;i<x;i++)
                 {
-		s[i+1]=students[i];
+		s[i+1]=this.students[i];
 		}
 		this.students=s;
 	}
@@ -68,7 +68,7 @@ public class StudentGroup implements StudentArrayOperation {
 		s[x]=student;
 		for(int i=0;i<x;i++)
                 {
-		s[i]=students[i];
+		s[i]=this.students[i];
 		}
 		this.students=s;
 	}
@@ -80,11 +80,11 @@ public class StudentGroup implements StudentArrayOperation {
 		Student[] s=new Student[x+1];
 		for(int i=0;i<index;i++)
                 {
-		s[i]=students[i];
+		s[i]=this.students[i];
 		}
 		for(int i=index+1;i<=x;i++)
 		{
-		s[i]=students[i-1];
+		s[i]=this.students[i-1];
 		}
                 s[index]=student;
 		this.students=s;
@@ -97,11 +97,11 @@ public class StudentGroup implements StudentArrayOperation {
 		Student[] s=new Student[x-1];
 		for(int i=0;i<index;i++)
                 {
-		s[i]=students[i];
+		s[i]=yhis.students[i];
 		}
 		for(int i=index;i<x-1;i++)
 		{
-		s[i]=students[i+1];
+		s[i]=this.students[i+1];
 		}
 		this.students=s;
 	}
@@ -117,11 +117,11 @@ public class StudentGroup implements StudentArrayOperation {
 		Student[] s=new Student[x-1];
 		for(int m=0;m<i;m++)
                 {
-		s[m]=students[m];
+		s[m]=this.students[m];
 		}
 		for(int j=i;j<x-1;j++)
 		{
-		s[j]=students[j+1];
+		s[j]=this.students[j+1];
 		}
 		this.students=s;
 		break;
