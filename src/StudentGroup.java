@@ -115,6 +115,10 @@ public class StudentGroup implements StudentArrayOperation {
 		if(this.students[i]=student)
 		{
 		Student[] s=new Student[x-1];
+		for(int m=0;m<i;m++)
+                {
+		s[m]=students[m];
+		}
 		for(int j=i;j<x-1;j++)
 		{
 		s[j]=students[j+1];
@@ -122,8 +126,7 @@ public class StudentGroup implements StudentArrayOperation {
 		this.students=s;
 		break;
 		}
-		else
-		{continue;}
+		
 		}	
 	}
 
