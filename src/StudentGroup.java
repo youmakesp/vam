@@ -85,81 +85,32 @@ public class StudentGroup implements StudentArrayOperation {
 
 	@Override
 	    public void addFirst(Student student) {
-		 try{
-                conArraytoArlist();
-                 std.add(0,student);
-                conArlisttoArray();
-		    }
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+		int x=0;
 	    }
 
 	@Override
 	    public void addLast(Student student) {
-		 try{
-                conArraytoArlist();
-                 std.add(student);
-                conArlisttoArray();
-		    }
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+		int x=0;
 	    } 
 
 	@Override
 	    public void add(Student student, int index) {
-		 try{
-                conArraytoArlist();
-                 std.add(index,student);
-                conArlisttoArray();
-		    }
-                   catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+		 int x=0;
 	    }
 
 	@Override
 	    public void remove(int index) {
-		 try{
-		
-                conArraytoArlist();
-                 std.remove(index);
-                conArlisttoArray();
-		}
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+		int x=0; 
 	    }
 
 	@Override
 	    public void remove(Student student) {
-		 try{
-                conArraytoArlist();
-                 std.remove(student);
-                conArlisttoArray();
-		    }
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+		int x=0;
 	    }
 
 	@Override
 	    public void removeFromIndex(int index) {
-		 try{
-                conArraytoArlist();
-                 std.subList(index,std.size()).clear();
-                conArlisttoArray();
-		    }
-                  catch(IllegalArgumentException ex)
-                   {
-                   System.out.println(ex);
-                   }
+
 	    }
 
 	@Override
