@@ -50,10 +50,14 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-                ArrayList<Student> std=new ArrayList<Student>(Arrays.asList(this.students));
-		std.add(0,student);
-		this.students= new Student[std.size()];
-                this.students=std.toArray(this.students);
+                int x=this.students.length;
+		Student[] s=new Student[x+1];
+		s[0]=student;
+		for(int i=0;i<x;i++)
+                {
+		s[i+1]=students[i];
+		}
+		this.students=s;
 	}
 
 	@Override
