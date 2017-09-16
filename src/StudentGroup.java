@@ -44,13 +44,16 @@ public class StudentGroup implements StudentArrayOperation {
 	public void setStudent(Student student, int index) {
 		// Add your implementation here
                 this.students[index]=student;
+		
 	}
 
 	@Override
 	public void addFirst(Student student) {
 		// Add your implementation here
-                
-                this.students[0]=student;
+                ArrayList<Student> std=new ArrayList<Student>(Arrays.asList(this.students));
+		std.add(0,student);
+		this.students= new Student[std.size()];
+                this.students=std.toArray(this.students);
 	}
 
 	@Override
