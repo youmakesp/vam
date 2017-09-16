@@ -238,17 +238,8 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public Student getNextStudent(Student student) {
 		// Add your implementation here
-		int x=this.students.length;
-		for(int i=0;i<x;i++)
- 		{
-		if(i==x-1)
-                { return null;}
-		if(this.students[i]==student)
-		{
-		return this.students[i+1];
-		break;
-		}
-		}
 		
+		return null;
+}		
 	
 }
