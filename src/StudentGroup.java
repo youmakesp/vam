@@ -177,6 +177,21 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void removeToElement(Student student) {
 		// Add your implementation here
+		int x=this.students.length;
+		for(int i=0;i<x;i++)
+ 		{
+		if(this.students[i]==student)
+		{
+		Student[] s=new Student[x-i];
+		for(int m=i;m<=x;m++)
+                {
+		s[m-i]=this.students[m];
+		}
+		
+		this.students=s;
+		break;
+		}
+		}
 	}
 
 	@Override
