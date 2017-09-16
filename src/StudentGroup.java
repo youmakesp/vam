@@ -78,7 +78,6 @@ public class StudentGroup implements StudentArrayOperation {
 		// Add your implementation here
 		 int x=this.students.length;
 		Student[] s=new Student[x+1];
-		s[index]=student;
 		for(int i=0;i<index;i++)
                 {
 		s[i]=students[i];
@@ -87,6 +86,7 @@ public class StudentGroup implements StudentArrayOperation {
 		{
 		s[i]=students[i-1];
 		}
+                s[index]=student;
 		this.students=s;
 	}
 
