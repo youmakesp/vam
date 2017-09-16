@@ -1,10 +1,5 @@
-import java.util.*;
+import java.util.Date;
 
-
-
-
-
-//StudentGroup class
 /**
  * A fix-sized array of students
  * array length should always be equal to the number of stored elements
@@ -24,119 +19,121 @@ public class StudentGroup implements StudentArrayOperation {
 	 * DO NOT remove or change this constructor, it will be used during task check
 	 * @param length
 	 */
-     
-	    
-		
-		public StudentGroup(int length) {
+	public StudentGroup(int length) {
 		this.students = new Student[length];
-	    }
+	}
 
 	@Override
-	    public Student[] getStudents() {
-		return this.students;
-	    }
+	public Student[] getStudents() {
+		// Add your implementation here
+		return students;
+	}
 
 	@Override
-	    public void setStudents(Student[] students) {
-		int x=0;
-	    }
+	public void setStudents(Student[] students) {
+		this.students=students;// Add your implementation here
+	}
 
 	@Override
-	    public Student getStudent(int index) {
-		 return null;
-	    }
+	public Student getStudent(int index) {
+		// Add your implementation here
+		return null;
+	}
 
 	@Override
-	    public void setStudent(Student student, int index) {
-		int x=0;
-	    }
+	public void setStudent(Student student, int index) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void addFirst(Student student) {
-		int x=0;
-	    }
+	public void addFirst(Student student) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void addLast(Student student) {
-		int x=0;
-	    } 
+	public void addLast(Student student) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void add(Student student, int index) {
-		 int x=0;
-	    }
+	public void add(Student student, int index) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void remove(int index) {
-		int x=0; 
-	    }
+	public void remove(int index) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void remove(Student student) {
-		int x=0;
-	    }
+	public void remove(Student student) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void removeFromIndex(int index) {
-
-	    }
-
-	@Override
-	    public void removeFromElement(Student student) {
-              int x=0;
-		
-	    }
+	public void removeFromIndex(int index) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void removeToIndex(int index) {
-		int x=0;
-	    }
+	public void removeFromElement(Student student) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void removeToElement(Student student) {
-		int x=9;
-	    }
+	public void removeToIndex(int index) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public void bubbleSort() {System.out.println("hello");
-		
-	    }
+	public void removeToElement(Student student) {
+		// Add your implementation here
+	}
 
 	@Override
-	    public Student[] getByBirthDate(Date date) {
-			
-              return this.students;
-	    } 
+	public void bubbleSort() {
+		// Add your implementation here
+	}
+
+	@Override
+	public Student[] getByBirthDate(Date date) {
+		// Add your implementation here
+		return null;
+	}
 
 	@Override
 	public Student[] getBetweenBirthDates(Date firstDate, Date lastDate) {
-	            return this.students;
+		// Add your implementation here
+		return null;
 	}
 
 	@Override
-	public Student[] getNearBirthDate(Date date, int days){	System.out.println("hello");return null;	
+	public Student[] getNearBirthDate(Date date, int days) {
+		// Add your implementation here
+		return null;
 	}
 
 	@Override
-	public int getCurrentAgeByDate(int indexOfStudent) {System.out.println("hello");return 0;
+	public int getCurrentAgeByDate(int indexOfStudent) {
+		// Add your implementation here
+		return 0;
 	}
 
 	@Override
-	public Student[] getStudentsByAge(int age) {  
-				
-				return this.students;   
+	public Student[] getStudentsByAge(int age) {
+		// Add your implementation here
+		return null;
 	}
 
 	@Override
-	public Student[] getStudentsWithMaxAvgMark(){
-				   
-		return this.students;		   
-
+	public Student[] getStudentsWithMaxAvgMark() {
+		// Add your implementation here
+		return null;
 	}
 
-	
+	@Override
 	public Student getNextStudent(Student student) {
-		 int x=0;
-		 return student;
+		// Add your implementation here
+		return null;
 	}
-  }
+}
