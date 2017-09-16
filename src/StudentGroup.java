@@ -63,6 +63,14 @@ public class StudentGroup implements StudentArrayOperation {
 	@Override
 	public void addLast(Student student) {
 		// Add your implementation here
+		 int x=this.students.length;
+		Student[] s=new Student[x+1];
+		s[x]=student;
+		for(int i=0;i<x;i++)
+                {
+		s[i]=students[i];
+		}
+		this.students=s;
 	}
 
 	@Override
