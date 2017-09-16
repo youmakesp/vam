@@ -97,7 +97,7 @@ public class StudentGroup implements StudentArrayOperation {
 		Student[] s=new Student[x-1];
 		for(int i=0;i<index;i++)
                 {
-		s[i]=yhis.students[i];
+		s[i]=this.students[i];
 		}
 		for(int i=index;i<x-1;i++)
 		{
@@ -112,7 +112,7 @@ public class StudentGroup implements StudentArrayOperation {
 		int x=this.students.length;
 		for(int i=0;i<x;i++)
  		{
-		if(this.students[i]=student)
+		if(this.students[i]==student)
 		{
 		Student[] s=new Student[x-1];
 		for(int m=0;m<i;m++)
