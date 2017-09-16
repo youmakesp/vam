@@ -123,7 +123,8 @@ public class StudentGroup implements StudentArrayOperation {
 		break;
 		}
 		else
-		{continue;}	
+		{continue;}
+		}	
 	}
 
 	@Override
